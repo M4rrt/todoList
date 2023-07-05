@@ -45,12 +45,11 @@ export const makeTodoState = () => {
 			return this.todos.filter(todo => todo.done).length
         },
 		addTodo (task :String){
-			const ids = this.todos.map(todo => todo.id);
-			console.log(ids)
-			let newId
-			Math.max(...ids)=== -Infinity ? newId = 1 : newId = 1+Math.max(...ids)
+			const ids = this.todos.map(todo => todo.id).sort();
+			const lastID = (ids.length > 0) ? ids[ids.length-1] : 0;
+			const newID = lastID+1
 			this.todos.push({
-				id : (newId),
+				id: (newID),
 				task : task,
 				done : false
 			})
@@ -61,7 +60,7 @@ export const makeTodoState = () => {
 			const index = this.todos.findIndex(todo => todo.id === id);
 			this.todos.splice(index,1)
 		},
-		changeStatus(id : number) {	
+		changeStatus(id : number) {
 			const todo = this.todos.filter(todo => todo.id === id);
 			todo[0].done = todo[0].done ? false : true;
 		},
