@@ -12,7 +12,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +35,25 @@
     transform: rotate(360deg);
   }
 }
+.w-80 {
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex .done-tasks {
+  width: 70%;
+  justify-content: center;
+  margin-left: 10%;
+}
+.flex .add-task {
+  width: 10%;
+  justify-content: center;
+}
+.flex .add-task button {
+  background: none;
+  border: none;
+  color: white;
+}/*# sourceMappingURL=App.css.map */

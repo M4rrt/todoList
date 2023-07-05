@@ -1,0 +1,30 @@
+.task {
+  flex-wrap: wrap;
+  display: flex;
+}
+.task div {
+  padding: 10px 0px;
+}
+.task div.id {
+  width: 10%;
+}
+.task div.task {
+  width: 70%;
+  justify-content: center;
+}
+.task div.done {
+  width: 10%;
+}
+.task div.done button {
+  background: none;
+  border: none;
+  color: white;
+}
+.task div.remove {
+  width: 10%;
+}
+.task div.remove button {
+  background: none;
+  border: none;
+  color: white;
+}/*# sourceMappingURL=task.css.map */

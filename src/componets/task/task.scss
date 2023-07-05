@@ -1,0 +1,30 @@
+.task {
+	flex-wrap: wrap;
+	display: flex;
+	div {
+		padding: 10px 0px;
+		&.id {
+			width: 10%;
+		}
+		&.task {
+			width: 70%;
+			justify-content: center;
+		}
+        &.done {
+            width: 10%;
+            button {
+                background: none;
+                border: none;
+                color: white;
+            }
+        }
+        &.remove {
+            width: 10%;
+            button {
+                background: none;
+                border: none;
+                color: white;
+            }
+        }
+	}
+}
