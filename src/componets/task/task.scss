@@ -4,6 +4,9 @@
         text-align: center;
         text-align: -webkit-center;
         button {
+            &.remove-button:hover {
+                color: #ae4f4f !important;
+            }
             display: flex;
         }
     }

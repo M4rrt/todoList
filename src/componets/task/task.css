@@ -6,6 +6,9 @@
 .task-list div button {
   display: flex;
 }
+.task-list div button.remove-button:hover {
+  color: #ae4f4f !important;
+}
 .task-list .id {
   border-left: 1px solid black;
   border-bottom: 1px solid black;

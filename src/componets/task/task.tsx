@@ -47,6 +47,7 @@ export const Task = ({ id, task, done }: TaskProps) => {
 			</Col>
 			<Col className="remove" span={2}>
 					<button
+						className="remove-button"
 						style={buttonStyle}
 						onClick={() => {
 							todoState.removeTodo(id);
