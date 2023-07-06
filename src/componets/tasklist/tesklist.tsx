@@ -5,7 +5,7 @@ import Task from "../task/task";
 export const TaskList = () => {
     const { todos } = todoState;
     return(
-        <div>
+        <div >
             {todos.map((todo) => {
             const { task, done, id } = todo;
             return <Task id={id} task={task} done={done}></Task>;

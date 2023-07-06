@@ -1,30 +1,25 @@
-.task {
-  flex-wrap: wrap;
+.task-list div {
+  padding: 2px;
+  text-align: center;
+  text-align: -webkit-center;
+}
+.task-list div button {
   display: flex;
 }
-.task div {
-  padding: 10px 0px;
+.task-list .id {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
-.task div.id {
-  width: 10%;
+.task-list .task {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
-.task div.task {
-  width: 70%;
-  justify-content: center;
+.task-list .done {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
-.task div.done {
-  width: 10%;
-}
-.task div.done button {
-  background: none;
-  border: none;
-  color: white;
-}
-.task div.remove {
-  width: 10%;
-}
-.task div.remove button {
-  background: none;
-  border: none;
-  color: white;
+.task-list .remove {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 }/*# sourceMappingURL=task.css.map */

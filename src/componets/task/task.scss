@@ -1,30 +1,27 @@
-.task {
-	flex-wrap: wrap;
-	display: flex;
-	div {
-		padding: 10px 0px;
-		&.id {
-			width: 10%;
-		}
-		&.task {
-			width: 70%;
-			justify-content: center;
-		}
-        &.done {
-            width: 10%;
-            button {
-                background: none;
-                border: none;
-                color: white;
-            }
+.task-list {
+    div {
+        padding: 2px ;
+        text-align: center;
+        text-align: -webkit-center;
+        button {
+            display: flex;
         }
-        &.remove {
-            width: 10%;
-            button {
-                background: none;
-                border: none;
-                color: white;
-            }
-        }
-	}
+    }
+    .id{
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .task {
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .done {
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .remove {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
 }

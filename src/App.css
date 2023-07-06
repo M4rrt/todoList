@@ -39,21 +39,47 @@
   width: 80%;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
+.row-top {
+  color: black;
+  border-radius: 5px 5px 0px 0px;
 }
-.flex .done-tasks {
-  width: 70%;
-  justify-content: center;
-  margin-left: 10%;
+.row-top div {
+  background-color: white;
+  padding: 2px;
 }
-.flex .add-task {
-  width: 10%;
-  justify-content: center;
+.row-top .id {
+  border-radius: 5px 0px 0px 0px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 }
-.flex .add-task button {
-  background: none;
+.row-top .task {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.row-top .done {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 0px 5px 0px 0px;
+  border-right: 1px solid black;
+}
+
+.row-bottom div:first-child {
+  border-bottom-left-radius: 10px;
+  border-left: 1px solid black;
+}
+.row-bottom div:last-child {
+  border-bottom-right-radius: 10px;
+  border-right: 1px solid black;
+}
+.row-bottom div {
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid black;
+}
+.row-bottom div button {
+  background-color: transparent;
   border: none;
-  color: white;
 }/*# sourceMappingURL=App.css.map */
